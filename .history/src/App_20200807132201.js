@@ -11,8 +11,8 @@ const App = () => {
   const [query, setQuery] = useState("chicken");
 
   useEffect(() => {
-    getRecipes();
-  }, [query]);
+    getRecipes(query);
+  });
 
   const getRecipes = async () => {
     const response = await fetch(
@@ -30,12 +30,12 @@ const App = () => {
 
   const updateSearch = (event) => {
     setSearch(event.target.value);
+    console.log(search);
   };
 
   const getSearch = (event) => {
     event.preventDefault();
     setQuery(search);
-    setSearch("");
   };
 
   return (
@@ -51,17 +51,14 @@ const App = () => {
           Search
         </button>
       </form>
-      <div className="recipes">
-        {recipes.map((recipe) => (
-          <Recipe
-            key={recipe.recipe.label}
-            title={recipe.recipe.label}
-            calories={recipe.recipe.calories}
-            image={recipe.recipe.image}
-            ingredients={recipe.recipe.ingredients}
-          />
-        ))}
-      </div>
+      {recipes.map((recipe) => (
+        <Recipe
+          key={recipe.recipe.label}
+          title={recipe.recipe.label}
+          calories={recipe.recipe.calories}
+          image={recipe.recipe.image}
+        />
+      ))}
     </div>
   );
 };

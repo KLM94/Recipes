@@ -12,7 +12,7 @@ const App = () => {
 
   useEffect(() => {
     getRecipes();
-  }, [query]);
+  });
 
   const getRecipes = async () => {
     const response = await fetch(
@@ -30,17 +30,17 @@ const App = () => {
 
   const updateSearch = (event) => {
     setSearch(event.target.value);
+    console.log(search);
   };
 
   const getSearch = (event) => {
     event.preventDefault();
     setQuery(search);
-    setSearch("");
   };
 
   return (
     <div className="App">
-      <form onSubmit={getSearch} className="search-form">
+      <form className="search-form">
         <input
           className="search-bar"
           type="text"
@@ -51,17 +51,14 @@ const App = () => {
           Search
         </button>
       </form>
-      <div className="recipes">
-        {recipes.map((recipe) => (
-          <Recipe
-            key={recipe.recipe.label}
-            title={recipe.recipe.label}
-            calories={recipe.recipe.calories}
-            image={recipe.recipe.image}
-            ingredients={recipe.recipe.ingredients}
-          />
-        ))}
-      </div>
+      {recipes.map((recipe) => (
+        <Recipe
+          key={recipe.recipe.label}
+          title={recipe.recipe.label}
+          calories={recipe.recipe.calories}
+          image={recipe.recipe.image}
+        />
+      ))}
     </div>
   );
 };
