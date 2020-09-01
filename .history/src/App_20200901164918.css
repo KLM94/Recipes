@@ -16,8 +16,7 @@
   padding: 2px;
   margin: 10px;
   display: flex;
-  flex-wrap: wrap;
-  flex-basis: 33%;
+  align-items: center;
 }
 
 .search-form {

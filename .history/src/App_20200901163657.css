@@ -11,15 +11,6 @@
   );
 }
 
-.singleRecipe {
-  border: 2px solid rgb(7, 7, 7);
-  padding: 2px;
-  margin: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-basis: 33%;
-}
-
 .search-form {
   min-height: 10vh;
   display: flex;
