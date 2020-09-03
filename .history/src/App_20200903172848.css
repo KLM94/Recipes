@@ -59,11 +59,6 @@
   width: 200px;
 }
 
-.totalCalories {
-  display: block;
-  line-break: strict;
-}
-
 .ingredients::before {
   content: "\A";
   white-space: pre;

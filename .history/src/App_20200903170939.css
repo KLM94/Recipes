@@ -59,17 +59,7 @@
   width: 200px;
 }
 
-.totalCalories {
-  display: block;
-  line-break: strict;
-}
-
-.ingredients::before {
-  content: "\A";
-  white-space: pre;
-  /* white-space: pre-line;
-  text-align: left;
-
-  display: block;
-  white-space: pre; */
+.ingredients {
+  margin-top: 50px;
+  text-align: justify;
 }

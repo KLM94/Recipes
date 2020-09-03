@@ -13,8 +13,7 @@
 
 .singleRecipe {
   border: 2px solid rgb(7, 7, 7);
-  box-shadow: 10px 8px #6d6c6c;
-  padding: 10px 50px;
+  padding: 10px;
   margin: 10px;
   display: flex;
   flex-wrap: wrap;
@@ -50,26 +49,16 @@
   flex-wrap: wrap;
 }
 
+.totalRecipes {
+  vertical-align: bottom;
+}
+
 .image {
   display: flex;
+  flex: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   border-radius: 50%;
-  padding: 0px 50px;
-  width: 200px;
-}
-
-.totalCalories {
-  display: block;
-  line-break: strict;
-}
-
-.ingredients::before {
-  content: "\A";
-  white-space: pre;
-  /* white-space: pre-line;
-  text-align: left;
-
-  display: block;
-  white-space: pre; */
+  padding: 5px;
+  width: 150px;
 }

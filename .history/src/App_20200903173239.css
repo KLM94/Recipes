@@ -60,8 +60,7 @@
 }
 
 .totalCalories {
-  display: block;
-  line-break: strict;
+  line-break: auto;
 }
 
 .ingredients::before {

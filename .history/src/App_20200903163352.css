@@ -50,26 +50,15 @@
   flex-wrap: wrap;
 }
 
+.totalRecipes {
+  vertical-align: bottom;
+}
+
 .image {
   display: flex;
   align-items: center;
   justify-content: space-around;
   border-radius: 50%;
-  padding: 0px 50px;
+  padding: 5px;
   width: 200px;
-}
-
-.totalCalories {
-  display: block;
-  line-break: strict;
-}
-
-.ingredients::before {
-  content: "\A";
-  white-space: pre;
-  /* white-space: pre-line;
-  text-align: left;
-
-  display: block;
-  white-space: pre; */
 }

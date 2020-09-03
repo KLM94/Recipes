@@ -59,9 +59,9 @@
   width: 200px;
 }
 
-.totalCalories {
-  display: block;
-  line-break: strict;
+.totalCalories::after {
+  content: "\A";
+  white-space: pre;
 }
 
 .ingredients::before {
