@@ -51,10 +51,17 @@
   width: 200px;
 }
 
-.ingredients {
-  text-align: left;
-}
+/* .totalCalories {
+  display: block;
+  line-break: strict;
+} */
 
-.ingredientsTitle {
-  margin-left: 23px;
-}
+/* .ingredients::before {
+  content: "\A";
+  white-space: pre;
+  /* white-space: pre-line;
+  text-align: left;
+
+  display: block;
+  white-space: pre; 
+} */

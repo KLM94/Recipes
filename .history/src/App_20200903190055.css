@@ -1,5 +1,14 @@
 .App {
   min-height: 100vh;
+  background-image: linear-gradient(
+    to top,
+    lightgrey 0%,
+    lightgrey 1%,
+    #e0e0e0 26%,
+    #efefef 48%,
+    #d9d9d9 75%,
+    #bcbcbc 100%
+  );
 }
 
 .singleRecipe {
@@ -7,12 +16,12 @@
   box-shadow: 10px 8px #6d6c6c;
   padding: 10px 50px;
   margin: 10px;
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
   flex-basis: 33%;
   background-image: linear-gradient(to top, #209cff 0%, #68e0cf 100%);
-  /* align-items: center; */
-  justify-content: center;
+  align-items: center;
+  /* justify-content: center; */
 }
 
 .search-form {
@@ -26,7 +35,6 @@
   width: 50%;
   border: none;
   padding: 10px;
-  background: #b1b0b0;
 }
 
 .search-button {
@@ -51,10 +59,17 @@
   width: 200px;
 }
 
-.ingredients {
-  text-align: left;
-}
+/* .totalCalories {
+  display: block;
+  line-break: strict;
+} */
 
-.ingredientsTitle {
-  margin-left: 23px;
-}
+/* .ingredients::before {
+  content: "\A";
+  white-space: pre;
+  /* white-space: pre-line;
+  text-align: left;
+
+  display: block;
+  white-space: pre; 
+} */

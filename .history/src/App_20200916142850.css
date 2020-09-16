@@ -52,9 +52,6 @@
 }
 
 .ingredients {
-  text-align: left;
-}
-
-.ingredientsTitle {
-  margin-left: 23px;
+  display: flex;
+  justify-content: left;
 }
